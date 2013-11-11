@@ -8,7 +8,11 @@
     		.state('home', {
     			url: '/home',
     			templateUrl: 'app/layouts/layout.main.html'
-    		});
+    		})
+            .state('home.details', {
+                url: '/details',
+                templateUrl: 'app/partials/home.details.html'
+            });
 
 		$stateProvider
     		.state('signin', {
